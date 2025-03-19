@@ -1,22 +1,32 @@
-let XP = 8000;  
+var vitorias = 110
+var derrotas = 5
 
-if (XP < 1000) {
-    console.log("O Herói Joãozinho está no nível Ferro");
-} else if (XP >= 1001 && XP <= 2000) {
-    console.log("O Herói Joãozinho está no nível Bronze");
-} else if (XP >= 2001 && XP <= 5000) {
-    console.log("O Herói Joãozinho está no nível Prata");
-} else if (XP >= 5001 && XP <= 7000) {
-    console.log("O Herói Joãozinho está no nível Ouro");
-} else if (XP >= 7001 && XP <= 8000) {
-    console.log("O Herói Joãozinho está no nível Platina");
-} else if (XP >= 8001 && XP <= 9000) {
-    console.log("O Herói Joãozinho está no nível Ascendente");
-} else if (XP >= 9001 && XP <= 10000) {
-    console.log("O Herói Joãozinho está no nível Imortal");
-} else {
-    console.log("O Herói Joãozinho está no nível Radiante");
+function soma(valor1,valor2){
+    return valor1 - valor2
 }
+
+let resultado = soma(vitorias,derrotas)
+
+console.log (resultado)
+
+
+ if (resultado < 10) {
+     console.log("O Herói tem de saldo de " + resultado + " vitórias e está no nível Ferro");
+ } else if (resultado >= 11 && resultado <= 20) {
+     console.log("O Herói tem de saldo de " + resultado + " vitórias e está no nível Bronze");
+ } else if (resultado >= 21 && resultado <= 50) {
+     console.log("O Herói tem de saldo de " + resultado + " vitórias e está no nível Prata");
+ } else if (resultado >= 51 && resultado <= 80) {
+     console.log("O Herói tem de saldo de " + resultado + " vitórias e está no nível Ouro");
+ } else if (resultado >= 81 && resultado <= 90) {
+     console.log("O Herói tem de saldo de " + resultado + " vitórias e está no nível Diamante");
+ } else if (resultado >= 91 && resultado <= 100) {
+     console.log("O Herói tem de saldo de " + resultado + " vitórias e está no nível Lendário");
+ } else {
+     console.log("O Herói tem de saldo de " + resultado + " vitórias e está no nível Imortal");
+ }
+
+
 
 
 
